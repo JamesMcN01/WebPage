@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="IndexCss.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+<body class="w3-light-grey w3-content " style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-black w3-sidebar w3-collapse  w3-animate-left" style="z-index:3; width: 300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="images/logo.jpg" style="width:100%;" class="w3-round"><br><br>
+            
+            <p class="w3-text-grey">Developed by Motive Studios<br>
+                Published by EA</p>
+        </div>
+        <div class="w3-bar-block">
+            <a href="index.html" onclick="w3_close()" class="w3-container w3-bar-item w3-button w3-padding w3-teal"><i
+                    class="fa fa-th-large fa-fw w3-margin-right"></i>Home</a>
+            <a href="story.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>Story mode</a>
+            <a href="Multiplayer.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class=" fa fa-users fa-fw w3-margin-right"></i>Multiplayer</a>
+            <a href="Ships.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-rocket fa-fw w3-margin-right"></i>Starfighters</a>
+            <a href="Locations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-map fa-fw w3-margin-right"></i>Locations</a>
+            <a href="Upgrades&Cosmetics.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class=" fa fa-wrench fa-fw w3-margin-right"></i>Upgrades and Cosmetics</a>
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="portfolio">
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="w3-container">
+                <h1><b>Home </b></h1><hr>
+            </div>
+        </header>
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding">
+
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="images/Pilots.jpg" alt="Pilots" style="width:100%" >
+                <div class="w3-container w3-white w3-round">
+                    <h4><b>Story mode</b></h4>
+                    <p>Join the pilots of Vanguard and Titan Squadron as you play through the events that take place after the battle of endor</p>
+                </div>
+            </div>
+            
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="images/FleetBattle.jpg" alt="Multiplayer" width="330px" height="185px" >
+                <div class="w3-container w3-white w3-round">
+                    <h4><b>Multiplayer</b></h4>
+                    <p>Compete in teams of 5 in Dogfights, Fleet battles and lastly Fleet battles vs ai.   </p>
+                </div>
+            </div>
+
+            <div class="w3-third w3-container w3-margin-bottom">
+                <img src="images/Space combat.jpg" alt="Norway" style="width:100%" >
+                <div class="w3-container w3-white w3-round">
+                    <h4><b>Starfighters</b></h4>
+                    <p>Suit up and choose  your starfighter from an arrray of ships and fly for the New Republic or The Galactic Empire</p>
+                </div>
+            </div>
+           
+        </div>
+
+        <!-- Second Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/location.jpg" alt="location" style="width:100%">
+                <div class="w3-container w3-white w3-round">
+                    <h4><b>Locations</b></h4>
+                    <p>Discover the new and old locations in the star wars galaxy in StoryMode or Multiplayer </p>
+                </div>
+            </div>
+
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/Baby yoda.jpg" alt="baby yoda" style="width:100%">
+                <div class="w3-container w3-white w3-round">
+                    <h4><b>Upgrades & Cosmetics</b></h4>
+                    <p>Customise your ship and pilot with cosmetics that you can purchase using Glory that you can earn particpating in matches and in daily challenges.</p>
+                </div>
+            </div>
+
+        
+        </div>
+
+    
+
+        <!-- CG short -->
+        <div class="w3-row-padding ">
+
+            <div class="w3-center w3-container w3-margin-bottom">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f2VmOqjV_7Q?controls=0&amp;start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="200%" allowfullscreen></iframe>
+                
+            </div>
+
+        </div>
+
+       <!-- Reveal Trailer -->
+
+        <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+            <div class="w3-container w3-center w3-margin-bottom ">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/w0eRkhR1z6A?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>   
+        </div>
+
+
+            <div class =" w3-row-padding w3-container w3-white w3-round">          
+                <h4><b>What is Star Wars Squadrons?</b></h4>
+                <p>Star Wars: Squadrons is a space combat game, played from a first-person perspective,with Vr and flight stick capabilities. Players can take control of starfighters from either the Galactic Empire or the New Republic navy. In these ships, they can utilise the management of power between the ship's functions of weaponry, shields and engines to defeat their opponents in combat. Imperial starfighters do not have shields, resulting in other additions to their class so that the two teams would be balanced.Players can check the ship's status, shields and powers by viewing the instruments in the ship's cockpit.As players earn more experience, they can unlock new weapons, shields, upgrades and various cosmetic items for the pilot and their ship.Completing Daily Challenges and Operation Challenges will also give players Glory, which can be spent on purchasing cosmetic unlocks.</p>
+                </div>
+            <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+           
+
+
+
+           <!-- Pricing Tables -->
+            
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-white w3-center">
+                        <li class="w3-xlarge w3-padding-32"><img src="images/Steam.jpg"></li>
+                        <li class="w3-padding-16">Cross play compatibility</li>
+                        <li class="w3-padding-16">VR compatibility</li>
+                        <li class="w3-padding-16">Flight Stick compatibility</li>
+                        <li class="w3-padding-16">Dlc included</li>
+                        <li class="w3-padding-16">
+                            <h4>€ 40</h4>
+                            <span class="w3-opacity">NO Microtransactions</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-black w3-padding-large w3-hover-dark-grey"><a href="https://store.steampowered.com/app/1222730/STAR_WARS_Squadrons/">Purchase<br>
+                            Now</a></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third w3-margin-bottom">
+                    <ul class="w3-ul w3-border w3-white w3-center">
+                        <li class="w3-xlarge w3-padding-32"><img src="images/x box.jpg "width="200px" height="225px"></li>
+                        <li class="w3-padding-16">Cross play compatibility</li>
+                        <li class="w3-padding-16">VR compatibility</li>
+                        <li class="w3-padding-16">Flight Stick compatibility</li>
+                        <li class="w3-padding-16">Dlc included</li>
+                        <li class="w3-padding-16">
+                            <h4>€ 40</h4>
+                            <span class="w3-opacity">NO Microtransactions</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-black w3-padding-large w3-hover-dark-grey"><a href="https://www.xbox.com/en-IE/games/star-wars-squadrons">Purchase <br>
+                            Now</a></button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-third">
+                    <ul class="w3-ul w3-border w3-white w3-center">
+                        <li class=" w3-xlarge w3-padding-32"><img src="images/download.png"></li>
+                        <li class="w3-padding-16">Cross play compatibility</li>
+                        <li class="w3-padding-16">VR compatiblity</li>
+                        <li class="w3-padding-16">Flight Stick Compatibility</li>
+                        <li class="w3-padding-16">Dlc included</li>
+                        <li class="w3-padding-16">
+                            <h4>€ 40</h4>
+                            <span class="w3-opacity">NO Microtransactions</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                           
+                            <button class=" w3-button w3-black w3-padding-large w3-hover-dark-grey"><a href="https://www.playstation.com/en-ie/games/star-wars-squadrons/">Purchase<br>
+                            Now</a></button>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+     
+        
+
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-dark-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">    
+                    <p>BY James Mc Neill - A00297604</p>
+                </div>
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                  <a href="file:///C:/Users/User/Documents/Visual%20Studio%20Code/Web%20Dev%20Project/W3CSS_Root/report%20(1).html">Report Page</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>

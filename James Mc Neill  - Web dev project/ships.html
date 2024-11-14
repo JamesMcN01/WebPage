@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<title>Starfighters</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="IndexCss.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-black w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+                title="close menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <img src="images/logo.jpg" style="width:100%;" class="w3-round"><br><br>
+            <p class="w3-text-grey">Developed by Motive Studios<br>
+                Published by EA</p>
+        </div>
+        <div class="w3-bar-block">
+            <a href="Index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding "><i
+                    class="fa fa-th-large fa-fw w3-margin-right"></i>Home</a>
+            <a href="story.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-user fa-fw w3-margin-right"></i>StoryMode</a>
+            <a href="Multiplayer.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-users fa-fw w3-margin-right"></i>Multiplayer</a>
+            <a href="Ships.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-teal"><i
+                    class="fa fa-rocket fa-fw w3-margin-right"></i>Starfighters</a>
+            <a href="Locations.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-map fa-fw w3-margin-right"></i>Locations</a>
+            <a href="Upgrades&Cosmetics.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i
+                    class="fa fa-wrench fa-fw w3-margin-right"></i>Upgrades & Cosmetics</a>
+        </div>
+    </nav>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+        title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+
+        <!-- Header -->
+        <header id="portfolio">
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                    class="fa fa-bars"></i></span>
+            <div class="w3-container">
+                <h1><b>Starfighters</b></h1>
+                <hr>
+               
+            </div>
+        </header>
+
+        <!-- Fighter Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-container w3-padding">
+                <h2><b>Fighters</b></h2>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/X-wing.jpg" alt="X wing" style="width:100%">
+                <div class="w3-container w3-white">
+                    <h4><b>T-65 X-wing</b></h4>
+                    <p>The workhorse of the New Republic, packing a good balance of firepower, durability, and maneuverability into its distinctive frame.This is the most versatile and easiest to handle of the New Republic starfighters and is effective against both enemy starfighters and capital ships. This is the ideal ship for rookies, but is also well-suited to experienced pilots, as it can adapt to any situation that may arise.</p>
+                </div>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/Tie fighter.jpg" alt="Tie fighter" width="500px" height="283">
+                <div class="w3-container w3-white">
+                    <h4><b>TIE/LN Fighter</b></h4>
+                    <p>The standard starfighter of the Imperial Navy, the TIE (Twin Ion Engine) fighter is sturdy (despite a lack of deflector shields), faster, and more agile than its Rebel X-wing counterpart, and versatile enough to serve in multiple roles. Its speed, maneuverability, tiny silhouette, and good forward visibility give it an edge in a dogfight, while its armor and payload options make it useful against enemy capital ships as well.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-container w3-padding-large w3-white" style="margin-bottom:32px">
+            <h3><b>Ship stats</b></h3>
+            <!-- Fighter stat grid -->
+            <p>Health</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:60%">60</div>
+            </div>
+            <p>Damage</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:50%">50</div>
+            </div>
+            <p>Speed</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70</div>
+            </div>
+
+        </div>
+
+        <!-- interceptor Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-container w3-padding ">
+                <h2><b>Interceptors</b></h2>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/A-wing.jpg" alt="a wing " style="width:100%">
+                <div class="w3-container w3-white">
+                    <h4><b>RZ-1 A-wing</b></h4>
+                    <p>By far the fastest and most agile starfighter in the New Republic’s lineup, the A-wing interceptor is built for dogfighting. While it is handy at taking out turrets on capital ships to clear the way for the heavy-hitters, the A-wing is better suited for forging ahead and tearing through enemy starfighters. Its weak hull and shields mean that it can’t endure much damage, but its speed and maneuverability make it a difficult target to hit and allow it to fly circles around its opponents.</p>
+                </div>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/Tie interceptor.jpg" alt="tie interceptor" style="width:100%" >
+                <div class="w3-container w3-white">
+                    <h4><b>TIE/IN Interceptor</b></h4>
+                    <p>The TIE interceptor is the lightest, fastest, and most responsive starfighter in space. It can use its high acceleration and turn rates to outmaneuver an enemy fighter, evade missiles, and dodge incoming cannon fire from capital ship turrets. This manoeuvrability is essential, because while it is the fastest, it is also the most fragile – sacrificing armor and shields for speed and agility. The TIE interceptor is an excellent choice for taking out enemy fighters and bombers, and for strafing turrets and subsystems on capital ships. The TIE interceptor is, however, not likely to put much of a dent in a capital ship’s hull.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-container w3-padding-large w3-white" style="margin-bottom:32px">
+            <h3><b>Ship stats</b></h3>
+            <!-- Interceptor Stat Grid -->
+            <p>Health</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:40%">40</div>
+            </div>
+            <p>Damage</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:50%">50</div>
+            </div>
+            <p>Speed</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95</div>
+            </div>
+        </div>
+
+      <!-- Bomber Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-container w3-padding " >
+                <h2><b>Bombers</b></h2>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/Y wing.jpg" alt="Y wing" width="500px" height="345">
+                <div class="w3-container w3-white">
+                    <h4><b>BTL Y-wing Bomber</b></h4>
+                    <p>The heavy hitter of any New Republic squadron, the multi-role Y-wing bomber may be sluggish compared to other ships in the New Republic’s roster. But what it lacks in speed, it more than makes up for in stamina and firepower. While its loadout makes it formidable in a dogfight, the Y-wing shines during assaults on capital ships, where its toughened hull, powerful shields, and devastating loadout can be the deciding factors in fleet engagements.</p>
+                </div>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/Tie Bomber.png" alt="Tie bomber" style="width:100%" >
+                <div class="w3-container w3-white">
+                    <h4><b>TIE/SA Bomber</b></h4>
+                    <p>A heavily armored tank of a ship, the TIE surface assault bomber is the slowest and least responsive ship in the Imperial roster, but that thick armor allows it to hang tough in a firefight against the faster ship classes. In a head-to-head joust with any other ship, the bomber – with its powerful loadout – will always come out on top. As the name implies, it is primarily designed for bombing runs, particularly on large capital ships. It can weather a storm of turbolaser fire to lay down a swath of destruction across heavily armored hulls, hampering or destroying escorts and flagships alike.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-container w3-padding-large w3-white" style="margin-bottom:32px">
+            <h3><b>Ship stats</b></h3>
+            <!-- Bomber Stat Grid  -->
+            <p>Health</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:90%">90</div>
+            </div>
+            <p>Damage</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width: 75%">75</div>
+            </div>
+            <p>Speed</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:33%">33</div>
+            </div>
+        </div>
+
+       <!-- Support Photo Grid-->
+        <div class="w3-row-padding">
+            <div class="w3-container w3-padding ">
+                <h2><b>Support</b></h2>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/U wing.png" alt="U-wing" width="500px" height="345px">
+                <div class="w3-container w3-white">
+                    <h4><b>UT-60D U-wing support craft</b></h4>
+                    <p>Sporting four massive thrusters that lend it surprising speed and mobility, the U-wing support craft is a welcome addition to any squadron. While it is difficult to kill in a dogfight, its true value is in supporting the squadron with life-saving supplies and repairs, allowing fellow pilots to operate more effectively. The U-wing can also disrupt enemy systems, making them easy targets for allies.</p>
+                </div>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/Tie reaper.jpg" alt="reaper" style="width:100%">
+                <div class="w3-container w3-white">
+                    <h4><b>TIE/RP Reaper</b></h4>
+                    <p>Surprisingly nimble for a ship of its bulk, the TIE reaper support craft brings many advantages to a squadron, and many disadvantages to that squadron’s opponents. One of the few Imperial starfighters equipped with deflector shields, it trades some firepower for squadron force-multiplying abilities, reloading allies and providing repair droids in the thick of battle.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-container w3-padding-large w3-white" style="margin-bottom:32px">
+            <h3><b>Ship stats</b></h3>
+            <!-- Support Stats grid  -->
+            <p>Health</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70</div>
+            </div>
+            <p>Damage</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:30%">30</div>
+            </div>
+            <p>Speed</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:65%">65</div>
+            </div>
+        </div>
+
+     <!-- Dlc ship grid -->
+        <div class="w3-row-padding">
+            <div class="w3-container w3-padding ">
+                <h2><b>DLC content</b></h2>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/B-wing.jpg" alt="b wing" width="500px" height="375px">
+                <div class="w3-container w3-white">
+                    <h4><b>A/SF-01 B-wing Bomber</b></h4>
+                    <p>The B-wing is a true blockade buster deployed by the New Republic. While it hardly stands on its own in a one-on-one against a dogfight specialist, its integrated ion cannons supplement the equipped primary weapon, helping to whittle down enemy shields and subsystems. A novel gyroscopic cockpit design permits the B-wing to deploy its larger capacity bomb payloads in multiple directions relative to the cockpit.</p>
+                </div>
+            </div>
+            <div class="w3-half w3-container w3-margin-bottom">
+                <img src="images/Defender.jpg" alt="defender" style="width:100%">
+                <div class="w3-container w3-white">
+                    <h4><b>TIE/D Defender</b></h4>
+                    <p>Only the most accomplished pilots of the Empire can wield the experimental TIE defender to its full potential. Based on prototype blueprints, its systems offer amazing performance to pilots skilled enough to manage them. The rapid-charge and quick-drain nature of its power management system, though challenging to master, allows the TIE defender to compete with more specialized ships in firepower, speed, and defense. Additionally, the equipped Advanced Power System can provide an immediate overcharge to a selected system.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="w3-container w3-padding-large w3-white" style="margin-bottom:32px">
+            <h3><b>Ship stats</b></h3>
+            <!-- Dlc ship stat grid  -->
+            <p>Health</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:70%">70</div>
+            </div>
+            <p>Damage</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80</div>
+            </div>
+            <p>Speed</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:60%">60</div>
+            </div>
+        </div>
+        
+      
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-32 w3-dark-grey">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <p> James Mc Neill - A00297604</p>
+                </div>
+            </div>
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                  <a href="file:///C:/Users/User/Documents/Visual%20Studio%20Code/Web%20Dev%20Project/W3CSS_Root/report%20(1).html">Report Page</a>
+                </div>
+            </div>
+        </footer>
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
